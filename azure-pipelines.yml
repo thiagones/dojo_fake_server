@@ -17,9 +17,10 @@ steps:
     dockerComposeFile: '**/docker-compose.yml'
     action: 'Run services'
 
-- task: Delay@1
+- task: Bash@3
   inputs:
-    delayForMinutes: '1'
+    targetType: 'inline'
+    script: 'sleep 20'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
