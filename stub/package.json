@@ -1,5 +1,5 @@
 {
-  "name": "wiremock",
+  "name": "dojo-stub-wiremock",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "wiremock": "^2.24.0"
+  "dependencies": {
+    "wiremock": "^2.27.2"
   }
 }
