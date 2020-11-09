@@ -3,8 +3,6 @@ services:
   wiremock:
     ports:
       - "8443:8443"
-    networks: 
-      - dojo-network
     build: 
       context: ./stub
       dockerfile: Dockerfile
@@ -15,12 +13,6 @@ services:
       - ASPNETCORE_URLS=http://+:80
     ports:
       - "8081:80"
-    networks: 
-      - dojo-network
     build:
       context: ./src/Dojo.Api
       dockerfile: Dockerfile
-    
-networks: 
-    dojo-network:
-        driver: bridge
