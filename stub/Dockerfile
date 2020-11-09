@@ -8,4 +8,4 @@ RUN npm ci --only=production
 COPY . .
 
 EXPOSE 8443
-CMD ["npm", "run", "serve-wiremock"]
+CMD ["npm", "run", "serve"]

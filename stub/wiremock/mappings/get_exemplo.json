@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/exemplo"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "mensage": "exemplo dojo"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
