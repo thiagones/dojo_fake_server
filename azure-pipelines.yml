@@ -9,9 +9,17 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Azure Container Registry'
+    dockerComposeFile: '**/docker-compose.yml'
+    action: 'Run services'
+
+- task: Delay@1
+  inputs:
+    delayForMinutes: '0.3'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
