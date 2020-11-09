@@ -21,7 +21,9 @@ steps:
   displayName: Sleep
   inputs:
     targetType: 'inline'
-    script: 'sleep 30'
+    script: | 
+      sleep 60
+      docker ps
 
 - task: Bash@3
   displayName: Get User
