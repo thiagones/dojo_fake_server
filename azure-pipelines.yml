@@ -15,7 +15,6 @@ steps:
   inputs:
     containerregistrytype: 'Azure Container Registry'
     dockerComposeFile: '**/docker-compose.yml'
-    detached: false
     action: 'Run services'
 
 - task: Bash@3
