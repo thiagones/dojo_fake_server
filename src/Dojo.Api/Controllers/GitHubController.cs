@@ -38,7 +38,7 @@ namespace Dojo.Api.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message, ex);
-                return StatusCode(StatusCodes.Status500InternalServerError);
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
 
             if (user == null)
@@ -62,7 +62,7 @@ namespace Dojo.Api.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message, ex);
-                return StatusCode(StatusCodes.Status500InternalServerError);
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
 
             if (repos == null || !repos.Any())
