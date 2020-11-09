@@ -18,11 +18,19 @@ steps:
     action: 'Run services'
 
 - task: Bash@3
+  displayName: Sleep
   inputs:
     targetType: 'inline'
-    script: 'sleep 20'
+    script: 'sleep 30'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: Bash@3
+  displayName: Get User
+  inputs:
+    targetType: 'inline'
+    script: 'curl http://localhost:8081/github/userxpto0911'
+
+- task: Bash@3
+  displayName: Get User Repos
+  inputs:
+    targetType: 'inline'
+    script: 'curl http://localhost:8081/github/userxpto0911/repos'
