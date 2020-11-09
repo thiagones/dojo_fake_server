@@ -19,7 +19,7 @@ steps:
 
 - task: Delay@1
   inputs:
-    delayForMinutes: '0.3'
+    delayForMinutes: '1'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
