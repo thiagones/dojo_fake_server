@@ -1,0 +1,13 @@
+{
+  "name": "wiremock",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve-wiremock": "wiremock --root-dir ./wiremock --port 8081 --https-port 8443"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wiremock": "^2.24.0"
+  }
+}
