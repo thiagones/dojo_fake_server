@@ -1,10 +1,18 @@
-version: "3.8"
+version: "3.3"
 services:
   dojo-api:
     environment:
+      - ASPNETCORE_ENVIRONMENT=Test
       - ASPNETCORE_URLS=http://+:80
     ports:
       - "5001:80"
     build:
       context: ./src/Dojo.Api
+      dockerfile: Dockerfile
+  
+  wiremock:
+    ports:
+      - "5002:8443"
+    build:
+      context: ./stub
       dockerfile: Dockerfile

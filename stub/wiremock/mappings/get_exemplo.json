@@ -1,12 +1,43 @@
 {
   "request": {
     "method": "GET",
-    "url": "/api/exemplo"
+    "url": "/users/thiago"
   },
   "response": {
     "status": 200,
     "jsonBody": {
-      "mensage": "exemplo dojo"
+      "login": "thiagones",
+      "id": 18563513,
+      "node_id": "MDQ6VXNlcjE4NTYzNTEz",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/18563513?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thiagones",
+      "html_url": "https://github.com/thiagones",
+      "followers_url": "https://api.github.com/users/thiagones/followers",
+      "following_url": "https://api.github.com/users/thiagones/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thiagones/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thiagones/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thiagones/subscriptions",
+      "organizations_url": "https://api.github.com/users/thiagones/orgs",
+      "repos_url": "https://api.github.com/users/thiagones/repos",
+      "events_url": "https://api.github.com/users/thiagones/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thiagones/received_events",
+      "type": "User",
+      "site_admin": false,
+      "name": "Thiago Melkior de Toledo Borges",
+      "company": "@ciandt",
+      "blog": "https://www.linkedin.com/in/thiagomtborges/",
+      "location": "Campinas, SP - Brasil",
+      "email": null,
+      "hireable": null,
+      "bio": null,
+      "twitter_username": null,
+      "public_repos": 11,
+      "public_gists": 1,
+      "followers": 2,
+      "following": 4,
+      "created_at": "2016-04-20T00:19:16Z",
+      "updated_at": "2020-11-11T16:20:09Z"
     },
     "headers": {
       "Content-Type": "application/json"

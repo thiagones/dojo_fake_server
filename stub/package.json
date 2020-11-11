@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "serve": "npm start"
+    "serve": "wiremock --root-dir ./wiremock --port 8081 --https-port 8443"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "wiremock": "^2.27.2"
+  }
 }
