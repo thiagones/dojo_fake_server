@@ -29,10 +29,10 @@ steps:
   displayName: Get User
   inputs:
     targetType: 'inline'
-    script: 'curl http://localhost:8081/github/userxpto0911'
+    script: 'curl http://localhost:5001/github/userxpto0911'
 
 - task: Bash@3
   displayName: Get User Repos
   inputs:
     targetType: 'inline'
-    script: 'curl http://localhost:8081/github/userxpto0911/repos'
+    script: 'curl http://localhost:5001/github/userxpto0911/repos'
