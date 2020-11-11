@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.3"
 services:
   wiremock:
     ports:
@@ -12,7 +12,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=IntegrationTest
       - ASPNETCORE_URLS=http://+:80
     ports:
-      - "8081:80"
+      - "5001:80"
     build:
       context: ./src/Dojo.Api
       dockerfile: Dockerfile
